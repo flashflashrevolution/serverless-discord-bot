@@ -15,5 +15,17 @@
       }
     },
     "webHashes": {}
+  },
+  {
+    "apihost": "https://faas-tor1-70ca848e.doserverless.co",
+    "namespace": "fn-4eb9f1f5-d120-4108-92ec-4c8a481e17d2",
+    "packageVersions": {},
+    "actionVersions": {
+      "discord-bot/link": {
+        "digest": "04c60f14cf941ebac5197f8f8fe5bd4c95f15344431356d6d15e5b846d44c4b9",
+        "version": "0.0.39"
+      }
+    },
+    "webHashes": {}
   }
 ]

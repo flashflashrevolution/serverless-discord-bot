@@ -1,9 +1,42 @@
+environment:
+  DISCORD_PUB_KEY: ${DISCORD_PUB_KEY}
+  FFR_API_KEY: ${FFR_API_KEY}
+  FFR_API_URL: ${FFR_API_URL}
+  VETERAN_ROLE_ID: ${VETERAN_ROLE_ID}
 packages:
-  - name: digitalocean-serverless
+  - name: discord-bot
     actions:
-      - name: test
+      - name: link
         limits:
-            memory: 256 # Default, 128 is the lowest possible, prefer that.
-            timeout: 3000 # Default, push this as low as possible.
-        runtime: 'python:default'
+          memory: 128 # Default, 128 is the lowest possible, prefer that.
+          timeout: 3000 # Default, push this as low as possible.
+        runtime: "python:default"
         web: raw
+
+      # - name: veteran
+      #   limits:
+      #     memory: 128 # Default, 128 is the lowest possible, prefer that.
+      #     timeout: 3000 # Default, push this as low as possible.
+      #   runtime: "python:default"
+      #   web: raw
+
+      # - name: info
+      #   limits:
+      #     memory: 128 # Default, 128 is the lowest possible, prefer that.
+      #     timeout: 3000 # Default, push this as low as possible.
+      #   runtime: "python:default"
+      #   web: raw
+
+      # - name: recent
+      #   limits:
+      #     memory: 128 # Default, 128 is the lowest possible, prefer that.
+      #     timeout: 3000 # Default, push this as low as possible.
+      #   runtime: "python:default"
+      #   web: raw
+
+      # - name: achievements
+      #   limits:
+      #     memory: 128 # Default, 128 is the lowest possible, prefer that.
+      #     timeout: 3000 # Default, push this as low as possible.
+      #   runtime: "python:default"
+      #   web: raw
